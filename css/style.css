@@ -1,0 +1,452 @@
+body{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+a{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+.wrapper{
+    margin: 0 80px 0 85px;
+}
+
+.header{
+    margin-top: 15px;
+}
+
+.navigation,
+.menu,
+.connection,
+.logo,
+.banner,
+.info,
+.info__list,
+.TV-programs-list,
+.genres,
+.actors-directors,
+.register-background,
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+}
+
+.logo {
+    max-width: 157px;
+    gap: 14px;
+}
+
+.logo__text{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.menu{
+    max-width: 388px;
+    gap: 54px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu__item{
+    color: #D9D9D9;
+    transition: all 1s;
+    font-weight: 700;
+}
+
+.menu__item:hover{
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.active__item{
+    position: relative;
+    transition: all 1s;
+}
+
+.active__item:hover::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 20px;
+    width: 46px;
+    background-image: url(../img/Header_line.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 25px;
+}
+
+.active__item_center-TV:hover::after{
+    content: '';
+    left: 18px;
+}
+
+.active__item_center-Mov:hover::after{
+    content: '';
+    left: 3px;
+}
+
+.connection {
+    max-width: 208px;
+    gap: 75px;
+}
+
+.connection__loupe { width: 18px; height: 18px;}
+.connection__bell { width: 21px; height: 24px;}
+.connection__person { width: 18px; height: 19px;}
+
+.banner-wrapper{
+    margin: 15px 0 0 85px;
+}
+
+.banner{
+    gap: 25px;
+}
+
+.text{
+    min-width: 525px;
+    max-width: calc(100% - 1075px)
+}
+
+.text__title {
+    font-size: 80px;
+    line-height: 70px;
+    font-family: 'Marcellus', serif;
+    font-weight: 400;
+    margin: 0 0 35px 0;
+}
+
+.info{
+    width: 280px;
+    gap: 40px;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.info__list{
+    gap: 18px;
+}
+
+.info__item_border-color{
+    width: 60px;
+    height: 24px;
+    border: double 1.5px transparent;
+    border-radius: 50px;
+    background-image: linear-gradient(black, black), linear-gradient(45deg, #326CFF, #26FFF2);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    text-align: center;
+    line-height: 20px;
+}
+
+.info__grade {
+    display: block;
+    position: relative;
+}
+
+.info__grade::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-image: url(../img/star.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    left: 30px;
+}
+
+.text__paragrah{
+    min-width: 490px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #C2C2C2;
+    margin: 25px 20px 35px 0;
+}
+
+.banner__img{
+    min-width: 955px;
+    min-height: 764px;
+    background-image: url(../img/Banner.png);
+    background-size: cover;
+}
+
+.btn{
+    border-radius: 100px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 800;
+    border: none;
+}
+
+.text__btns_blue{
+    background-image: linear-gradient(45deg, #326CFF, #26FFF2);
+}
+
+.text__btns_blue a {
+    color: #ffffff;
+}
+
+.btn_play{
+    position: relative;
+    padding-left: 59px;
+    margin-right: 30px;
+}
+
+.btn_play::before{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 18px;
+    width: 14px;
+    background-image: url(../img/Btn_play.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 15px;
+    left: 30px;
+}
+
+.text__btns_white{
+    background-color: #ffffff;
+}
+
+.text__btns_white a {
+    color: #323232;
+}
+
+hr{
+    margin: 0;
+    border: 2px solid #2F2E2E;
+}
+
+.TV-programs{
+    margin-top: 60px;
+}
+
+.all{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 20px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.all::before{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-image: url(../img/Line.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 2px;
+}
+
+.TV-programs-list{
+    gap: 41px;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.TV-programs-list__item{
+    width: 206px;
+    height: 306px;
+    border-radius: 20px;
+}
+
+.TV-programs-list__item:hover{
+    box-shadow: 0px 4px 10px 10px #26FFF2;
+}
+
+.btn_TV{
+    margin-top: 55px;
+}
+
+.section-genres{
+    margin-top: 100px;
+}
+
+.genres{
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.genres-item{
+    width: 340px;
+    height: 198px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.genres-item span{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 20px;
+}
+
+.genres-item__img{
+    width: 80px;
+    height: 80px;
+}
+
+.rom-item{background: linear-gradient(109.31deg, #FD093F 2.4%, #F383F1 100%);}
+.dr-item{background: linear-gradient(114.5deg, #0FFFDA 2.22%, #3CDB77 68.84%);}
+.his-item{background: linear-gradient(109.31deg, #B936FF 2.4%, #57DEDA 100%);}
+.act-item{background: linear-gradient(109.31deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);}
+.sci-item{background: linear-gradient(109.31deg, #FF6472 2.4%, #FDA75D 100%);}
+.hor-item{background: linear-gradient(110.16deg, #13547A 2.37%, #80D0C7 96.77%);}
+.com-item{background: linear-gradient(109.93deg, #FFF77B 2.37%, #FFBF42 50%);}
+.doc-item{background: linear-gradient(109.31deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);}
+
+.section-actors-directors{
+    margin-top: 78px;
+}
+
+.actors-directors{
+    margin-top: 40px;
+}
+
+.actors-directors-item{
+    cursor: pointer;
+}
+
+.actors-directors-item__img{
+    border-radius: 100%;
+}
+
+.actors-directors-item span{
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.section-recommendations{
+    margin-top: 143px;
+}
+
+.recommendations{
+    display: flex;
+    height: 341px;
+    justify-content: center;
+}
+
+.miniature-item1{
+    background: url(../img/Big.Buck.Bunny..png) no-repeat center;
+    border-radius: 20px 0 0 20px;
+}
+
+.miniature-item2{
+    background: linear-gradient(87.02deg, #0D1A73, #000000 30.52%);
+    border-radius: 0 20px 20px 0;
+}
+
+.recommendations__item{
+    width: 720px;
+    height: 341px;
+    cursor: pointer;
+}
+
+.miniature-item2:hover{
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
+}
+
+.miniature-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+}
+
+.miniature-item__img{
+    width: 294px;
+    height: 148px;
+}
+
+.miniature-item span{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 20px;
+}
+
+.section-register{
+    margin-top: 121px;
+}
+
+.register{
+    display: flex;
+    justify-content: center;
+}
+
+.register-background{
+    width: 1224px;
+    height: 270px;
+    background: url(../img/background.png) no-repeat center;
+    gap: 84px;
+}
+
+.register-background__paragraf{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    margin: 71px 0 71px 57px;
+}
+
+.register-background button{
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-right: 152px;
+}
+
+footer{
+    margin-top: 121px;
+    background-color: #101012;
+}
+
+.footer{
+    padding: 70px 160px;
+    align-items: flex-start;
+}
+
+.footer ul{
+    margin: 0;
+}
+
+.footer li{
+    padding-bottom: 20px;
+}
+
+.footer li:last-child{
+    padding-bottom: 0;
+}
+
+.footer a{
+    font-weight: 600;
+    font-size: 18px;
+    color: #C2C2C2;
+
+}
